@@ -88,7 +88,7 @@ class TemplateRenderer {
 	private function setTemplateValue(){
         $model_login_state=  new ModelLoginState();
         $config = config::getInstance();
-        $this->setValue('base_url', 'http://'.$config->getDomain().'/');
+        $this->setValue('base_url', 'https://'.$config->getDomain().'/');
 
         //ログイン
         $header['is_login'] = $model_login_state->isLogin();

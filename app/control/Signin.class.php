@@ -52,7 +52,7 @@ class Signin{
 			return $this->template->render('Signin.tpl');
 		}
 		else{
-			header("Location: http://" . $config->getDomain() . "/");
+			header("Location: https://" . $config->getDomain() . "/");
 			exit;
 		}
 	}

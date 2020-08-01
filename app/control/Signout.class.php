@@ -34,7 +34,7 @@ class Signout{
 			return $this->template->render('Signut_error.tpl');
 		}
 		else{
-			header("Location: http://" . $config->getDomain() . "/");
+			header("Location: https://" . $config->getDomain() . "/");
 			exit;
 		}
 	}
